@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText"
+            android:text="Ingrese frase a codificar:"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/caja"
+            android:layout_below="@+id/editText"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toLeftOf="@+id/button"
+            android:layout_toStartOf="@+id/button" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Codificar"
+            android:id="@+id/button"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:background="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            android:layout_alignBottom="@+id/caja"
+            android:layout_alignTop="@+id/caja" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Avila Erwin\nMendoza Alejandro\nPiguave Jocelyne\nComunicación de Datos A"
+            android:id="@+id/cop"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:src="@drawable/ico"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/cop"
+            android:layout_alignTop="@+id/cop" />
+
+        <GridView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tabla"
+            android:layout_below="@+id/caja"
+            android:layout_marginTop="40dp"
+            android:layout_alignRight="@+id/button"
+            android:layout_alignEnd="@+id/button"
+            android:numColumns="4"
+            android:choiceMode="none"
+            android:layout_above="@+id/cop"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentRight="false"/>
+
+    </RelativeLayout>
